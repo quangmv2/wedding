@@ -337,9 +337,9 @@ window.addEventListener('scroll', debounce(() => {
 // Preload critical images
 function preloadImages() {
     const imageUrls = [
-        'images/_Z5A3461 (1).jpg',
-        'images/_Z5A4138.jpg',
-        'images/_Z5A4184 (1).jpg'
+        './images/_Z5A3461 (1).jpg',
+        './images/_Z5A4138.jpg',
+        './images/_Z5A4184 (1).jpg'
     ];
     
     imageUrls.forEach(url => {
@@ -379,12 +379,10 @@ window.addEventListener('error', function(e) {
     console.error('JavaScript error:', e.error);
 });
 
-// Service Worker disabled for file:// protocol
-// Uncomment below when hosting on HTTP/HTTPS server
-/*
+// Service Worker for GitHub Pages
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('./sw.js')
             .then(registration => {
                 console.log('SW registered: ', registration);
             })
@@ -393,4 +391,3 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
             });
     });
 }
-*/
