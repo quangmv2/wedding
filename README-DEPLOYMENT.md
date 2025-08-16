@@ -33,7 +33,7 @@
 ```
 
 4. **Important Notes:**
-   - All paths are relative (`./images/` instead of `/images/`)
+   - All paths are relative (`./` instead of `/images/`)
    - Service Worker uses relative paths
    - Music from external CDN (Zing MP3)
    - Fallback music sources included
@@ -49,7 +49,7 @@
    - HTTPS required for some features
 
 ## Deployment Checklist:
-- [ ] All image paths use `./images/`
+- [ ] All image paths use `./`
 - [ ] Service Worker paths are relative
 - [ ] Music has fallback sources
 - [ ] HTTPS enabled (GitHub Pages default)

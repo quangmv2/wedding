@@ -337,9 +337,9 @@ window.addEventListener('scroll', debounce(() => {
 // Preload critical images
 function preloadImages() {
     const imageUrls = [
-        './images/_Z5A3461 (1).jpg',
-        './images/_Z5A4138.jpg',
-        './images/_Z5A4184 (1).jpg'
+        './_Z5A3461 (1).jpg',
+        './_Z5A4138.jpg',
+        './_Z5A4184 (1).jpg'
     ];
     
     imageUrls.forEach(url => {
